@@ -17,7 +17,7 @@ public class GoogleDemoTest {
 		@Managed(driver = "chrome")
 		WebDriver driver;
 		NavigationDemo navigate;
-		GoogleDemoPage locate;
+		GoogleDemoPage locate; 
 		
 		@Test
 		public void googleActions() {
