@@ -16,6 +16,7 @@
 		<junit5.version>5.9.1</junit5.version>
 		<serenity.version>3.5.1</serenity.version>
 		<selenium.version>4.7.2</selenium.version>
+		
 	</properties>
 	<build>
 		<plugins>
