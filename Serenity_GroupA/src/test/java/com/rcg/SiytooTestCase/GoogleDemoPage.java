@@ -13,10 +13,10 @@ public class GoogleDemoPage extends UIInteractions {
 	public void webRedirect() {
 		$(googleImages).click();
 	}
-	
+
 	@Step("Verify if the page was redirected")
 	public String confirmTrue() {
 		return $(verification).getText();
-
 	}
+
 }
