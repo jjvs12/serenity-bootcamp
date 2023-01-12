@@ -8,8 +8,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 		
-		plugin = {""},
-		features = "src/test/java/com.rcg.SerranoTestCase/com.rcg.SerranoTestCase.Cucumber"
+		plugin = {"pretty"},
+		features = "src/test/java"
 		
 )
 public class G_CucumberRunner {
