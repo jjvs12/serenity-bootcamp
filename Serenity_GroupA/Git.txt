@@ -1,0 +1,20 @@
+GIT
+-track and colaborate on code
+-version of control system
+
+What does git do
+-Repositories
+-Clone
+-Staging and Commiting
+-Branch & Merge
+-Pull
+-Push
+
+Advantages
+-Over 70% dev use git
+-retrieve
+
+git init -initialize git
+git clone <url> - copying git
+
+Merge conflict
