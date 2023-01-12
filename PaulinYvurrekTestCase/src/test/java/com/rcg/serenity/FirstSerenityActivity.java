@@ -2,13 +2,11 @@ package com.rcg.serenity;
 
 
 import org.junit.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
-import net.serenitybdd.junit.runners.SerenityRunner;
 import org.openqa.selenium.WebDriver;
 
 import net.serenitybdd.core.steps.UIInteractions;
-import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 
 @RunWith(SerenityRunner.class)
@@ -22,8 +20,8 @@ public class FirstSerenityActivity extends UIInteractions{
 	 	 
 	@Test
 	public void enterYourNameOnSearchBar() {
-		navigate.toTheGoogleSearchPage();
+		navigate.toTheGoogleHomePage();
 		driver.manage().window().maximize();
-		search.byKeyword("Yvurrek Paulin");
+		search.byKeyword("Sports Update");
 	 }
 }
