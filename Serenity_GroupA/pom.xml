@@ -1,21 +1,23 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>Serenity_GroupA</groupId>
-  <artifactId>Serenity_GroupA</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>Serenity_GroupA</groupId>
+	<artifactId>Serenity_GroupA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>Serenity_GroupA</name>
-  <url>http://maven.apache.org</url>
+	<name>Serenity_GroupA</name>
+	<url>http://maven.apache.org</url>
 
-  	<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<bonigarcia.version>5.3.1</bonigarcia.version>
 		<junit5.version>5.9.1</junit5.version>
 		<serenity.version>3.5.1</serenity.version>
 		<selenium.version>4.7.2</selenium.version>
+		<cucumber.version>7.10.1</cucumber.version>
+		<junit-platform.version>1.9.2</junit-platform.version>
+		
 	</properties>
 	<build>
 		<plugins>
@@ -90,5 +92,25 @@
 			<version>${serenity.version}</version>
 		</dependency>
 
-  </dependencies>
+		
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-cucumber</artifactId>
+			<version>${serenity.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit-platform-engine</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-suite-api</artifactId>
+			<version>${junit-platform.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>
