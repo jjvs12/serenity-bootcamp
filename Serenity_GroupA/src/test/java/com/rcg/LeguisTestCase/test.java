@@ -34,7 +34,6 @@ import net.thucydides.core.annotations.Managed;
 			locate.darkThemeEnable();
 
 		}
-		
 		@Test
 		void changeLanguage() {
 			locate.changeLanguageToFilipino();
