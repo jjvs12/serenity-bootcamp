@@ -89,6 +89,13 @@
 			<artifactId>serenity-junit</artifactId>
 			<version>${serenity.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-cucumber</artifactId>
+			<version>${serenity.version}</version>
+			<scope>test</scope>
+		</dependency>
 
   </dependencies>
 </project>
